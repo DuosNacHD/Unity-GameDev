@@ -4,12 +4,12 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - zemin
+  - Platform
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Platform
   - Water
   - UI
   - 
