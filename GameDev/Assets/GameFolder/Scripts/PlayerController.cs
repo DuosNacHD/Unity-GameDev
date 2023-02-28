@@ -28,6 +28,17 @@ public class PlayerController : MonoBehaviour
         Flip();
         Animations();
     }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+{
+        
+            IInteractable interact = collision.gameObject.GetComponent<IInteractable>();
+            if (interact != null)
+            {
+                interact.Interact();
+            }
+        
+    }
     #region Animations
     void Animations()
     {
