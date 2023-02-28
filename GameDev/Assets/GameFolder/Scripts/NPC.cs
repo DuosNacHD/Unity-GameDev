@@ -9,9 +9,8 @@ public class NPC : MonoBehaviour,IInteractable
     [SerializeField]
     string Npc_name;
 
-    void IInteractable.Interact()
+    void IInteractable.Interactable()
     {
-        Debug.Log(Npc_name);
         npcDialog(GetComponent<VIDE_Assign>());
     }
     public string getName()

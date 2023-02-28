@@ -28,14 +28,17 @@ public class PlayerController : MonoBehaviour
         Flip();
         Animations();
     }
-
+    public void test()
+    {
+        Debug.Log("Görev Alýndý!!");
+    }
     private void OnTriggerEnter2D(Collider2D collision)
 {
         
-            IInteractable interact = collision.gameObject.GetComponent<IInteractable>();
-            if (interact != null)
+            IInteractable interactable = collision.gameObject.GetComponent<IInteractable>();
+            if (interactable != null)
             {
-                interact.Interact();
+                interactable.Interactable();
             }
         
     }
