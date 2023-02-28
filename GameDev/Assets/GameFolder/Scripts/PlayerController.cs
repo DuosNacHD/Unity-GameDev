@@ -1,19 +1,22 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 public class PlayerController : MonoBehaviour
 {
     public Vector3 Spawnpoint;
 
+    [SerializeField] TMP_Text textE;
     [SerializeField] int Health;
     [SerializeField] float speed, jump, coyoteTime;
     [SerializeField] Transform groundCheck;
     [SerializeField] LayerMask groundLayer;
 
+    IInteractable interactable;
     Rigidbody2D rb;
     Animator anim;
     float direction, coyoteTimer;
-    bool reJump, reUnJump;
+    bool reJump, reUnJump,Interacting;
     void Start()
     {
         Spawnpoint = transform.position;
@@ -27,21 +30,39 @@ public class PlayerController : MonoBehaviour
         JumpF();
         Flip();
         Animations();
+        Interact();
     }
-    public void test()
+    #region InteractableControl
+    void Interact()
     {
-        Debug.Log("Görev Alýndý!!");
+        if (Input.GetKeyDown(KeyCode.E) && Interacting)
+        {
+            interactable.Interactable();
+            Interacting = false;
+            textE.enabled = false;
+        }
     }
     private void OnTriggerEnter2D(Collider2D collision)
-{
-        
-            IInteractable interactable = collision.gameObject.GetComponent<IInteractable>();
-            if (interactable != null)
-            {
-                interactable.Interactable();
-            }
+    {
+
+         interactable = collision.gameObject.GetComponent<IInteractable>();
+        if (interactable != null) 
+        {
+            Interacting = true;
+            textE.enabled = true;
+        }
         
     }
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+         interactable = collision.gameObject.GetComponent<IInteractable>();
+        if (interactable != null)
+        {
+            Interacting = false;
+            textE.enabled = false;
+        }
+    }
+    #endregion
     #region Animations
     void Animations()
     {

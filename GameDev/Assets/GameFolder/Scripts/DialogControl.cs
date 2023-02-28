@@ -6,8 +6,8 @@ using VIDE_Data;
 using UnityEngine.UI;
 public class DialogControl : MonoBehaviour
 {
-    public GameObject diyalogUI,playerUI;
-    public TMP_Text npcMessage, npcName;
+    GameObject playerUI, diyalogUI;
+    TMP_Text npcMessage, npcName;
     public TMP_Text[] diyalogSecenek;
     private void OnEnable()
     {
@@ -22,6 +22,11 @@ public class DialogControl : MonoBehaviour
     }
     private void Start()
     {
+        diyalogUI = GameObject.FindGameObjectWithTag("Canvas").transform.Find("Dialog").gameObject;
+        npcMessage = diyalogUI.transform.Find("NPCPanel").Find("Message").Find("NpcText").GetComponent<TMP_Text>();
+        npcName = diyalogUI.transform.Find("NPCPanel").Find("Name").Find("NpcName").GetComponent<TMP_Text>();
+        playerUI = diyalogUI.transform.Find("PlayerPanel").Find("Scrolling").Find("Viewport").Find("Content").gameObject;
+
         diyalogUI.SetActive(false);
     }
     private void Update()
