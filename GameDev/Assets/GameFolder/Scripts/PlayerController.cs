@@ -4,6 +4,7 @@ using UnityEngine;
 using TMPro;
 public class PlayerController : MonoBehaviour
 {
+    public float Money;
     public Vector3 Spawnpoint;
 
     [SerializeField] TMP_Text textE;

@@ -11,7 +11,8 @@ public class Door : MonoBehaviour,IInteractable
     }
     public void Interactable()
     {
-        character.gameObject.transform.position = tpPosition.transform.position;
+        character.gameObject.transform.position = tpPosition.transform.position + Vector3.up/2;
+        GameObject.Find("TargettedCam").transform.position = transform.position + Vector3.up * 5/2;
         if (isIndoor)
         {
         }

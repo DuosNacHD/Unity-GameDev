@@ -118,7 +118,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 1
-  controlID: 22
+  controlID: 66
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -143,7 +143,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 23
+  controlID: 67
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -168,7 +168,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 1
-  controlID: 24
+  controlID: 68
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -193,7 +193,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 25
+  controlID: 29
 --- !u!114 &9
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -364,18 +364,18 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 54e1ffffdcfaffff
+      m_ExpandedIDs: da96ffff70f2ffffdcfaffff466c0000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
-        m_Name: TpPos
-        m_OriginalName: TpPos
+        m_Name: Door
+        m_OriginalName: Door
         m_EditFieldRect:
           serializedVersion: 2
           x: 0
           y: 0
           width: 0
           height: 0
-        m_UserData: -8496
+        m_UserData: 27718
         m_IsWaitingForDelay: 0
         m_IsRenaming: 0
         m_OriginalEventType: 0
@@ -668,9 +668,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -4.294546, y: 1.1176162, z: -0.19751845}
+    m_Target: {x: 0.6776844, y: -1.671071, z: 0.019910656}
     speed: 2
-    m_Value: {x: -4.294546, y: 1.1176162, z: -0.19751845}
+    m_Value: {x: 0.6776844, y: -1.671071, z: 0.019910656}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -721,9 +721,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 10.134639
+    m_Target: 2.9846737
     speed: 2
-    m_Value: 10.134639
+    m_Value: 2.9846737
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -881,22 +881,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/GameFolder
+    - Assets/GameFolder/Prefabs
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/GameFolder
+  - Assets/GameFolder/Prefabs
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\erhan\Documents\GitHub\Unity-GameDev\GameDev
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: aa790000
-    m_LastClickedID: 31146
-    m_ExpandedIDs: 00000000a8790000aa790000b8790000c079000000ca9a3b
+    m_SelectedIDs: f4790000
+    m_LastClickedID: 31220
+    m_ExpandedIDs: 00000000dc790000de790000e079000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -924,7 +924,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000a8790000aa790000
+    m_ExpandedIDs: 00000000dc790000de790000e0790000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
